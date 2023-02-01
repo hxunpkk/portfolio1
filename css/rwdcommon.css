@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+@media screen and (max-width: 991px) {
+    #header {
+        width: 100%;
+        position: static;
+        top: 0;
+        left: 0;
+        height: 56.36px;
+        background: #FFFFFF;
+        /* border: 1px solid #000; */
+        padding: 0 15px;
+        position: relative;
+    }
+    #header h1 {
+        text-align: center;
+        padding: 15px 0;
+        height: 100%;
+        width: 104.83px;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #nav.on {
+        display: block;
+    }
+
+    #nav .depth1 > li {
+        padding: 0;
+        color: #626262;
+        font-size: 11px;
+        font-weight: bold;
+        transition: all 0.4s;
+        position: relative;
+    }
+    #nav .depth1 > li:hover {
+        color: #000000;
+    }
+    #nav .depth1 > li > a {
+        display: inline-block;
+        width: 250px;
+        padding: 18.5px 30px 18.5px 0;
+        border-bottom: 1px solid #ededed;
+        position: relative;
+    } 
+    #nav .depth1 > li.on > a {
+        border-bottom: none;
+    }
+    #nav .depth1 > li.on > a > i {
+        transform:translateY(-50%) rotate(90deg);
+        transition: all 0.4s;
+    }
+
+    #nav .depth2 {
+        position: static;
+        text-align: left;
+        background: #fff;
+        width: 242px;
+        padding-left: 8px;
+        padding-top : 0;
+    }
+    #nav .depth2 > li {
+        padding: 0px;
+        color: #232323;
+        font-size: 11px;
+        font-weight: 500;
+        margin-bottom: 5px;
+        width: inherit;
+        border-bottom: 1px solid #ededed;
+        transition: all 0.4s;
+    }
+    #nav .depth1 > li:last-child > .depth2 > li {
+        border-bottom: none;
+    }
+    #nav .depth2 > li > a {
+        display: inline-block;
+        padding: 10px 0;
+        height: 38px;
+        border-bottom: none;
+        position: relative;
+    }
+    #nav .depth2 > li > a > i {
+        display: none;
+    }
+    #nav .depth1 > li:last-child > .depth2 > li > a {
+        border-bottom: 1px solid #ededed;
+        width: inherit;
+    }
+
+    #nav .depth3 {
+        display: block;
+        position: static;
+        text-align: left;
+        background: #fff;
+        width: 238px;
+        padding-left: 8px;
+        padding-top : 0;
+    }
+    #nav .depth3 > li {
+        padding: 0px;
+        color: #232323;
+        font-size: 11px;
+        font-weight: 500;
+        margin-bottom: 5px;
+        width: inherit;
+        border-bottom: none;
+        transition: all 0.4s;
+    }
+    #nav .depth3 > li > a {
+        display: inline-block;
+        padding: 6px 0 0;
+        height: 30px;
+        border-bottom: none;
+        position: relative;
+    }
+    #nav .depth3 > li:first-child {
+        padding-top: 10px;
+    }
+
+    #header #address {
+        padding: 0 15px 20px;
+        width: 280px;
+        display: none;
+    }
+
+    #header #address.on {
+        display: block;
+    }
+    #header #address .socials {
+        width: 260px;
+        font-size: 16px;
+        padding-top: 8%;
+        margin-bottom: 11%;
+        text-align: left;
+    }
+    #header #address .socials i {
+        padding: 0 8px;
+    }
+    #header #address p {
+        padding-top: 12%;
+        color: #939393;
+        border-top: 1px solid #ededed;
+        font-size: 11px;
+        text-align: left;
+        font-size: 11px;
+    }
+
+    .openbtn {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 15px;
+        vertical-align: middle;
+        height: 100%;
+        border: none;
+    }
+    .openbtn > span {
+        display: block;
+        width: 16px;
+        height: 2px;
+        background: #232323;
+        content: "";
+        margin: 3px 0px;
+        transition: all 0.4s;
+    }
+    .openbtn:hover > span {
+        background: #f00;
+    }
+
+    .openbtn.on > span:nth-child(1) {
+        transform: rotate(45deg) translate(7px);
+    }
+    .openbtn.on > span:nth-child(2) {
+        opacity: 0;
+        transition: none;
+    }
+    .openbtn.on > span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px);
+    }
+
+}
