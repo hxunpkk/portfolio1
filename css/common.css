@@ -5,6 +5,7 @@
 /* font-family: 'Noto Sans KR', sans-serif; */
 
 #header { 
+    float: left;
     width: 290px; 
     position: fixed;
     top: 0; left: 0; height: 100%; 
@@ -13,6 +14,7 @@
     border-radius: 0;
     font-family: 'Montserrat', sans-serif;
     position: relative;
+    height: 100vp;
 }
 #header h1 {
     text-align: center;
@@ -71,7 +73,7 @@
     font-weight: 500;
     transition: all 0.4s;
 }
-#nav .depth2 > li:hover {
+#nav .depth2 > li:hover{
     color: #000000;
 }
 #nav .depth2 > li > a {
@@ -131,7 +133,8 @@
 
 #header #address {
     padding: 0 15px 20px;
-    height: 121px;
+    height: auto;
+    background:#FFFFFF
 }
 #header #address .socials {
     width: 260px;
