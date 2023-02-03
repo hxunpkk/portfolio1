@@ -35,6 +35,8 @@
     }
     #nav { /*포지션 픽스드, 바텀0으로, 스크롤바는 높이 픽갑값으로 줘서 넘는 값 오버플로우 스크롤 처리하기*/
         width: 280px;
+        overflow-y: auto;
+        height:100%;
     }
 
     #nav .depth1 > li {
@@ -141,7 +143,7 @@
 
     #header #address .socials {
         width: 260px;
-        font-size: 16px;
+        font-size: 18px;
         padding-top: 20px;
         margin-bottom: 27.5px;
         text-align: left;
@@ -191,4 +193,10 @@
         transform: rotate(-45deg) translate(7px);
     }
 
+    #footer {
+        padding-left: 0;
+    }
+    #footer .f_info {
+        padding: 30px 0;
+    }
 }

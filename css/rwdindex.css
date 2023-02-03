@@ -1,5 +1,33 @@
 @charset "utf-8";
 
 @media screen and (max-width: 991px) {
-    
+    .article1 .textbox {
+        position: absolute;
+        top : 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 60px;
+        background: rgba(255, 255, 255, 0.85);
+        width: 90%;
+        text-align: center;
+    }
+    .article1 .textbox h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 70px;
+        line-height: 65px;
+        font-weight: 700;
+        color: #232323;
+        letter-spacing: -2px;
+        width: auto;
+        border-bottom: 1px solid #1c1c1c;
+        padding-bottom: 35px;
+    }
+    .article1 .textbox > p {
+        padding: 35px 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+        color: #626262;
+    }
 }

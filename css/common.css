@@ -1,9 +1,10 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans+KR&family=Roboto:wght@300;400&display=swap');
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Noto Sans KR', sans-serif; */
 
+/* header */
 #header { 
     width: 290px; 
     position: fixed;
@@ -128,7 +129,7 @@
 }
 #header #address .socials {
     width: 260px;
-    font-size: 16px;
+    font-size: 18px;
     padding-top: 21px;
     margin-bottom: 29px;
     text-align: center;
@@ -147,4 +148,128 @@
 
 .openbtn {
     display: none;
+}
+
+
+
+/* footer */
+#footer {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-left: 290px;
+}
+
+#footer .f_info {
+    background: #1c1c1c;
+    padding: 60px 30px; 
+    color: #6f6f6f;
+    line-height: 20px;
+    height: 100%;
+}
+#footer .row {
+    display: inline-block;
+}
+#footer .f_info .row > div {
+    width: 25%;
+    height: 200px;
+    float: left;
+    border-right: 1px solid #2d2d2d;
+}
+#footer .f_info > .row > div:last-child {
+    border-right: none;
+}
+#footer .f_info h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #939393;
+}
+
+
+#footer .f_info_content{
+    padding: 0 15px;
+}
+#footer .f_info_content p {
+    margin: 25px 0;
+    margin-right: 10px;
+}
+#footer .f_info_content .socials {
+    font-size: 19px;
+    color: #fff;
+}
+#footer .f_info_content .socials i {
+    margin-right: 15px;
+    transition: all 0.5s;
+}
+#footer .f_info_content .socials a:last-child > i {
+    margin-right: 0;
+}
+#footer .f_info_content .socials i:hover {
+    color: #ff5519;
+}
+
+
+#footer .f_info_links{
+    padding: 0 15px 0 45px;
+}
+#footer .f_info_links li a{
+    line-height: 25px;
+    transition: all 0.5s;
+}
+#footer .f_info_links li a:hover{
+    color: #ff5519;
+}
+
+
+#footer .f_info_contact {
+    padding: 0 15px 0 45px;
+}
+#footer .f_info_contact > p {
+    line-height: 25px;
+}
+#footer .f_info_contact > p:nth-child(3) {
+    padding-bottom: 15px;
+}
+#footer .f_info_contact a{
+    transition: all 0.5s;
+}
+#footer .f_info_contact a:hover{
+    color: #ff5519;
+}
+#footer .f_info_contact > a {
+    text-decoration: underline;
+}
+#footer .f_info_contact > a:hover{
+    text-decoration: none;
+}
+
+#footer .f_info_portfolio{
+    padding: 0 15px 0 45px;
+}
+
+
+#footer .f_policy {
+    background: #141414;
+    color: #626262;
+    padding: 50px 0;
+}
+#footer .f_policy > div{
+    float: left;
+    width: 50%;
+    padding: 0 25px;
+}
+#footer .f_policy a {
+    padding: 0 10px;
+    transition: all 0.5s;
+}
+#footer .f_policy a:first-child {
+    border-right: 1px solid #626262;
+}
+#footer .f_policy a:hover {
+    color: #ff5519;
+}
+#footer .right_text {
+    text-align: right;
 }
