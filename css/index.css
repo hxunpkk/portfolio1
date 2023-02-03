@@ -4,6 +4,7 @@
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Noto Sans KR', sans-serif; */
 
+/* article1 */
 .article1 {
     width: 100%;
     height: 100vh;
@@ -58,4 +59,57 @@
 .article1 .textbox > a:hover {
     background: #fff;
     color: #232323;
+}
+
+
+
+/* article2 */
+.article2 {
+    background: #1c1c1c;
+    padding: 130px 20px;
+    margin-left: 290px;
+}
+
+.article2 > div {
+    display: inline-block;
+    width: 27%;
+    margin: 0 30px;
+}
+.article2 .title {
+    display: table;
+    padding-bottom: 15px;
+}
+.article2 .title h3 {
+    display: table-cell;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 54px;
+    color: #939393;
+    letter-spacing: -1px;
+}
+.article2 .title > span {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+    line-height: 22px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #6f6f6f;
+}
+.article2 .textbox > p {
+    font-size: 14px;
+    color: #6f6f6f;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 60px;
+    padding-bottom: 25px;
+}
+.article2 .textbox:after {
+    content: "";
+    display: block;
+    width: 15%;
+    border-bottom: 1px solid #ff5519;
 }
