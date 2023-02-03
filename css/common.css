@@ -157,7 +157,7 @@
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    padding-left: 290px;
+    margin-left: 290px;
 }
 
 #footer .f_info {
@@ -212,7 +212,7 @@
 
 
 #footer .f_info_links{
-    padding: 0 15px 0 45px;
+    padding: 0 15px 0 30px;
 }
 #footer .f_info_links li a{
     line-height: 25px;
@@ -224,7 +224,7 @@
 
 
 #footer .f_info_contact {
-    padding: 0 15px 0 45px;
+    padding: 0 15px 0 30px;
 }
 #footer .f_info_contact > p {
     line-height: 25px;
@@ -246,7 +246,7 @@
 }
 
 #footer .f_info_portfolio{
-    padding: 0 15px 0 45px;
+    padding: 0 15px 0 30px;
 }
 
 
@@ -254,6 +254,7 @@
     background: #141414;
     color: #626262;
     padding: 50px 0;
+    padding-right: 50px;
 }
 #footer .f_policy > div{
     float: left;
@@ -272,4 +273,30 @@
 }
 #footer .right_text {
     text-align: right;
+}
+
+
+
+/* 하단 화살표 */
+#gotop { 
+    position:fixed; 
+    right:50px; 
+    bottom:50px; 
+    z-index:9999999; 
+    display: none;
+}
+#gotop a { 
+    display:block;
+    width:33px; 
+    height:33px; 
+    border-radius:50%; 
+    background: #878787; 
+    color:#fff; 
+    text-align:center;
+    font-size:16px; 
+    line-height:33px;
+    transition:all 0.4s;
+}
+#gotop a:hover { 
+    background: #000;
 }

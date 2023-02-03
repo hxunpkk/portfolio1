@@ -16,8 +16,8 @@
     position: absolute;
     top : 50%;
     transform: translateY(-50%);
-    left: 45%;
-    padding: 82px;
+    left: 55%;
+    padding: 90px;
     background: rgba(255, 255, 255, 0.85);
     width: 40%;
 }

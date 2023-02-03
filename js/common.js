@@ -47,3 +47,19 @@ $('#header #nav .depth1 > li > a').on('click', function(){
         return false
     }
 })
+
+$(window).scroll(function(){
+    let sct = $(this).scrollTop()
+    if (sct>100) {
+        $('#gotop').fadeIn(300)
+    } else {
+        $('#gotop').fadeOut(300)
+    }
+}) 
+
+$('#gotop a').on('click', function(){
+    $('html').animate({
+        scrollTop:'0'
+    }, 200)
+    return false
+})

@@ -194,9 +194,13 @@
     }
 
     #footer {
-        padding-left: 0;
+        margin-left: 0;
     }
     #footer .f_info {
         padding: 30px 0;
+    }
+
+    #footer .f_policy {
+        padding-right: 0;
     }
 }
