@@ -66,14 +66,18 @@
 /* article2 */
 .article2 {
     background: #1c1c1c;
-    padding: 130px 20px;
+    padding: 130px 50px;
     margin-left: 290px;
 }
 
-.article2 > div {
-    display: inline-block;
-    width: 27%;
-    margin: 0 30px;
+.article2 ul {
+    overflow: hidden;
+}
+
+.article2 ul li {
+    float: left;
+    width: 30%;
+    margin-right: 40px;
 }
 
 .article2 .title {
@@ -102,21 +106,23 @@
     color: #6f6f6f;
 }
 
-.article2 .textbox > p {
+.article2 ul li > p {
     font-size: 14px;
     color: #6f6f6f;
     font-weight: 400;
     line-height: 24px;
     font-family: 'Roboto', sans-serif;
     padding-right: 60px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
-.article2 .textbox:after {
+.article2 ul li > span {
+    display: inline-block;
     content: "";
-    display: block;
-    width: 15%;
-    border-bottom: 1px solid #ff5519;
+    background:  #ff5519;
+    width: 50px;
+    height: 1px;
+    margin: 3px 0px;
 }
 
 
@@ -467,48 +473,47 @@
 }
 
 .article6 .mainbox {
+    overflow: hidden;
     height: 40vh;
-    position: relative;
 }
-.article6 .mainbox > div{
+.article6 .mainbox > li{
     float: left;
     width: 29%;
     margin: 0 20px;
 }
+.article6 .mainbox > li:nth-child(3n+1) {
+    clear: both;
+}
 
-.article6 .contentsbox1 > div {
+.article6 .list > li {
     overflow: hidden;
-}
-.article6 .contentsbox1 > div > div {
-    float: left;
-    padding: 40px 0;
     border-bottom: 1px solid #2d2d2d;
+    padding: 40px 0;
 }
-.article6 .contentsbox1 .icon {
+
+.article6 .list > li > div {
+    float: left;
+}
+.article6 .list > li > .icon {
     width: 8%;
     color: #6f6f6f;
     font-size: 30px;
     padding-right: 60px;
-    padding-bottom: 40px;
 }
-.article6 .contentsbox1 .text {
+.article6 .list > li > .text {
     width: 80%;
     color: #6f6f6f;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
-.article6 .contentsbox1 > div:nth-child(3n+1) {
-    clear: both;
-}
 
-.article6 .imgbox {
+.article6 .mainbox > li:nth-child(2) {
     background: url(../img/783x820.png) no-repeat center;
     background-size:cover;
     height: 100%;
-    width: 100%;
     position: relative;
 }
-.article6 .imgbox::before {
+.article6 .mainbox > li:nth-child(2)::before {
     content: '';
     position: absolute;
     top: 0;
@@ -517,10 +522,11 @@
     bottom: 0;
     transition: all 0.4s;
 }
-.article6 .imgbox:hover{
+.article6 .mainbox > li:nth-child(2):hover::before{
     background: #ff5519;
+    z-index: 9;
 }
-.article6 .imgbox #title {
+.article6 .mainbox > li:nth-child(2) #title {
     position: absolute;
     top: 20%;
     left: 10%;
@@ -532,21 +538,21 @@
     transition: all 0.4s;
     z-index: 10;
 }
-.article6 .imgbox:hover #title{
+.article6 .mainbox > li:nth-child(2):hover #title{
     opacity: 1;
 }
 
-.article6 .contentsbox2 {
-    padding: 30px 0;
+.article6 .mainbox > li:nth-child(3) {
+    padding: 60px 0;
 }
-.article6 .contentsbox2 h3 {
+.article6 .mainbox > li:nth-child(3) h3 {
     line-height: 22px;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     color: #939393;
     padding-bottom: 20px;
 }
-.article6 .contentsbox2 p {
+.article6 .mainbox > li:nth-child(3) p {
     font-size: 14px;
     color: #6f6f6f;
     font-weight: 400;
@@ -555,7 +561,7 @@
     padding-bottom: 35px;
 }
 
-.article6 .contentsbox2 a {
+.article6 .mainbox > li:nth-child(3) a {
     letter-spacing: .5px;
     border: 2px solid #fff;
     padding: 8px 18px;
@@ -567,7 +573,7 @@
     transition: all 0.4s;
 }
 
-.article6 .contentsbox2 a:hover {
+.article6 .mainbox > li:nth-child(3) a:hover {
     background: #fff;
     color: #1c1c1c;
 }
