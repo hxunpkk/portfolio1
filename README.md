@@ -5,4 +5,4 @@
 3. 큰 화면 섹션 구현 완료 (반응형 수정 중)
 4. 브라우저 상단으로 올라가는 화살표 구현 (화면 오른쪽 하단)
 
-원본 사이트 (http://d.cafe24.com/preview/?productCode=PTHD759409&frame=P) => 사이트 자료가 없어져 파일 내 pdf 파일로 대체
+원본 사이트 (~~http://d.cafe24.com/preview/?productCode=PTHD759409&frame=P~~) => 사이트 자료가 없어져 파일 내 pdf 파일로 대체
