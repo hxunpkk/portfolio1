@@ -1,9 +1,31 @@
-var ww = $(window).width()
-if(ww>991) {
-    $('html').addClass('pc')
-} else {
-    $('html').addClass('mobile')
+var deviceSize = 1024
+function scrollOX(status){
+    $('html').css({
+        overflowY:status
+    })
+    return $('html').width()
 }
+var scX = scrollOX('hidden')
+var scO = scrollOX('scroll')
+var scD = scX - scO
+
+if(scD>0) {
+    deviceSize = deviceSize - scD
+}
+
+function init() {
+    let ww = $(this).width()
+    if (ww > deviceSize) {
+        $('html').addClass('pc').removeClass('mobile')
+    } else {
+        $('html').addClass('mobile').removeClass('pc')
+    }
+}
+init()
+
+$(window).on('resize', function () {
+    init()
+})
 
 $('#header .openbtn').on('click', function(){
     $(this).toggleClass('on')

@@ -80,6 +80,10 @@
     margin-right: 40px;
 }
 
+.article2 ul li:last-child {
+    margin-right: 0;
+}
+
 .article2 .title {
     display: table;
     padding-bottom: 15px;
