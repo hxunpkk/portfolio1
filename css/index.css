@@ -200,6 +200,7 @@
 
 .article4 ul {
     height: 100%;
+    overflow: hidden;
 }
 
 .article4 ul > li{
@@ -665,4 +666,36 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; 
+}
+
+.article7 .news li > .pics {
+    position: relative;
+}
+.article7 .news li > .pics::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.4s;
+}
+.article7 .news li > .pics:hover::before {
+    background: #ff5519;
+    z-index: 9;
+}
+.article7 .news li > .pics > #title {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: #fff;
+    font-size: 20px;
+    opacity: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: all 0.4s;
+    z-index: 10;
+}
+.article7 .news li > .pics:hover > #title {
+    opacity: 1;
 }

@@ -21,6 +21,16 @@
         font-size: 70px;
         line-height: 55px;
     }
+    .article5 .first_ul li .aboutbox {
+        padding: 60px 40px;
+    }
+    
+    .article5 .first_ul li .aboutbox h3{
+        padding-top: 0px;
+    }
+    .article5 .first_ul li .aboutbox p{
+        padding: 20px 0;
+    }
 }
 
 
@@ -70,6 +80,11 @@
 
     .article4 {
         margin-left: 0;
+        height: 200vh;
+    }
+    .article4 ul > li{
+        width: 50%;
+        height: 50%;
     }
 
     .article5 {

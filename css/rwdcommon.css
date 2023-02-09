@@ -195,12 +195,32 @@
 
     #footer {
         margin-left: 0;
+        text-align: center;
+    }
+    #footer .row {
+        text-align: center;
     }
     #footer .f_info {
         padding: 30px 0;
     }
-
+    #footer .f_info_content{
+        padding-left: 30px;
+    }
+    #footer .f_info .row > div {
+        float: none;
+        border-right: none;
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+    }
+    #footer .f_info_content .socials {
+        font-size: 14px;
+    }
+    #footer .f_info_content .socials i {
+        margin-right: 10px;
+    }
     #footer .f_policy {
         padding-right: 0;
     }
+    
 }

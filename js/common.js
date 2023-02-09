@@ -1,30 +1,34 @@
 var deviceSize = 1024
-function scrollOX(status){
+function scrollOX(status) {
     $('html').css({
-        overflowY:status
+        overflowY: status
     })
     return $('html').width()
 }
+
 var scX = scrollOX('hidden')
 var scO = scrollOX('scroll')
 var scD = scX - scO
 
-if(scD>0) {
+if (scD > 0) {
     deviceSize = deviceSize - scD
 }
 
-function init() {
-    let ww = $(this).width()
-    if (ww > deviceSize) {
-        $('html').addClass('pc').removeClass('mobile')
-    } else {
-        $('html').addClass('mobile').removeClass('pc')
-    }
+let ww = $(this).width()
+if (ww > deviceSize) {
+    $('html').addClass('pc')
+} else if (ww <= deviceSize) {
+    $('html').addClass('mobile')
 }
-init()
-
 $(window).on('resize', function () {
-    init()
+    let ww = $(this).width()
+    if (ww > deviceSize && !$('html').hasClass('pc')) {
+        $('html').addClass('pc').removeClass('mobile')
+        location.reload()
+    } else if (ww <= deviceSize && !$('html').hasClass('mobile')) {
+        $('html').addClass('mobile').removeClass('pc')
+        location.reload()
+    }
 })
 
 $('#header .openbtn').on('click', function(){

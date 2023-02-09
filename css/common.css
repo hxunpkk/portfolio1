@@ -271,6 +271,9 @@
 #footer .f_policy a:hover {
     color: #ff5519;
 }
+#footer .left_text {
+    text-align: left;
+}
 #footer .right_text {
     text-align: right;
 }
