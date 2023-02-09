@@ -3,15 +3,10 @@
 @media screen and (max-width: 991px) {
     #header {
         width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
         height: 56.36px;
-        background: #FFFFFF;
         padding: 0 15px 0 0;
     }
     #header h1 {
-        text-align: center;
         padding: 15px 0;
         margin-left : 15px;
         height: 100%;
@@ -33,6 +28,7 @@
     .side_menu.on {
         display: block;
     }
+
     #nav { /*포지션 픽스드, 바텀0으로, 스크롤바는 높이 픽갑값으로 줘서 넘는 값 오버플로우 스크롤 처리하기*/
         width: 280px;
         overflow-y: auto;
@@ -41,22 +37,15 @@
 
     #nav .depth1 > li {
         padding: 0 15px;
-        color: #626262;
         background: #fff;
-        font-size: 11px;
-        font-weight: bold;
-        transition: all 0.4s;
         position: relative;
     }
     #nav .depth1 > li:hover {
         color: #000000;
     }
     #nav .depth1 > li > a {
-        display: inline-block;
         width: 100%;
         padding: 18.5px 30px 18.5px 0;
-        border-bottom: 1px solid #ededed;
-        position: relative;
         border-bottom: none;
     } 
 
@@ -71,7 +60,6 @@
 
     #nav .depth2 {
         position: static;
-        text-align: left;
         background: #fff;
         width: 100%;
         padding-left: 8px;
@@ -80,22 +68,17 @@
     #nav .depth2 > li {
         padding: 0px;
         color: #232323;
-        font-size: 11px;
-        font-weight: 500;
         margin-bottom: 5px;
         width: inherit;
         border-bottom: 1px solid #ededed;
-        transition: all 0.4s;
     }
     #nav .depth1 > li:last-child > .depth2 > li {
         border-bottom: none;
     }
     #nav .depth2 > li > a {
-        display: inline-block;
         padding: 10px 0;
         height: 38px;
         border-bottom: none;
-        position: relative;
     }
     #nav .depth2 > li > a > i {
         display: none;
@@ -108,7 +91,6 @@
     #nav .depth3 {
         display: block;
         position: static;
-        text-align: left;
         background: #fff;
         width: 100%;
         padding-left: 8px;
@@ -117,15 +99,11 @@
     #nav .depth3 > li {
         padding: 0px;
         color: #232323;
-        font-size: 11px;
-        font-weight: 500;
         margin-bottom: 5px;
         width: inherit;
         border-bottom: none;
-        transition: all 0.4s;
     }
     #nav .depth3 > li > a {
-        display: inline-block;
         padding: 6px 0 0;
         height: 30px;
         border-bottom: none;
@@ -137,27 +115,17 @@
 
     #header #address {
         padding: 0 15px 20px;
-        background: #fff;
         width: 280px;
     }
 
     #header #address .socials {
-        width: 260px;
-        font-size: 18px;
         padding-top: 20px;
         margin-bottom: 27.5px;
         text-align: left;
     }
-    #header #address .socials i {
-        padding: 0 8px;
-    }
     #header #address p {
         padding-top: 30px;
-        color: #939393;
-        border-top: 1px solid #ededed;
-        font-size: 11px;
         text-align: left;
-        font-size: 11px;
     }
 
     .openbtn {
@@ -201,7 +169,7 @@
         text-align: center;
     }
     #footer .f_info {
-        padding: 30px 0;
+        padding: 30px 60px;
     }
     #footer .f_info_content{
         padding-left: 30px;

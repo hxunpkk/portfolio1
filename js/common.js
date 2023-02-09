@@ -86,6 +86,6 @@ $(window).scroll(function(){
 $('#gotop a').on('click', function(){
     $('html').animate({
         scrollTop:'0'
-    }, 200)
+    }, 300)
     return false
 })
