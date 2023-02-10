@@ -31,6 +31,9 @@
     .article5 .first_ul li:last-child {
         height: 30vw;
     }
+    .article5 .first_ul li .aboutbox {
+        padding: 50px 40px;
+    }
 }
 
 
@@ -56,9 +59,20 @@
         margin-left: 0;
     }
 
+    .article2 ul li {
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 20px;
+    }
+
 
     .article3 {
         margin-left: 0;
+    }
+    .article3 ul li {
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 20px;
     }
 
 
@@ -103,4 +117,86 @@
     .article7 .news li .pics {
         height: 45vh;
     }
+}
+
+@media screen and (max-width: 700px) {
+    .article1 .textbox {
+        width: 100%;
+    }
+    .article1 .textbox h2 {
+        font-size: 50px;
+        line-height: 45px;
+    }
+
+    .article2 {
+        padding-left: 8px;
+        padding-right: 5px;
+    }
+
+
+    .article3 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+
+    .article4{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .article5 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .article5 .first_ul li {
+        width: 100%;
+    }
+    
+    .article5 .first_ul li:last-child {
+        width: 100%;
+        height: 75vw;
+    }
+    .article5 .first_ul li .aboutbox {
+        padding: 30px 20px;
+    }
+    .article5 .second_ul {
+        border-top: none;
+    }
+    .article5 .second_ul li {
+        width: 100%;
+        padding: 70px 50px;
+        border-top: 1px solid #eeeaea;
+        border-right: none;
+    }
+
+    .article6 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .article6 .mainbox {
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .article6 .mainbox > li{
+        width: 95%;
+    }    
+    .article6 .mainbox > li:nth-child(2) {
+        height: 30%;
+    }
+    .article6 .mainbox > li:nth-child(3){
+        text-align: center;
+        margin-top: 10px;
+        padding-bottom: 0px;
+    }
+    .article6 .mainbox > li:nth-child(3) > p{
+        text-align: left;
+    }
+
+    .article7 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
 }
