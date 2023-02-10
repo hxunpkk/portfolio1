@@ -303,3 +303,27 @@
 #gotop a:hover { 
     background: #000;
 }
+
+
+/* 인트로 애니메이션 */
+.introAni {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #000;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    z-index: 99999999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.introAni > div {
+    padding-bottom: 20px;
+}

@@ -89,3 +89,21 @@ $('#gotop a').on('click', function(){
     }, 300)
     return false
 })
+
+$(window).on('load', function(){
+
+    let count = 0;
+    let timer = setInterval(add, 25)
+
+    function add() {
+        count++
+        if(count>=100){ 
+            clearInterval(timer) 
+            $('.introAni').animate({
+                opacity: "0"
+            }, 500, function(){
+                $(this).hide()
+            })
+        }
+    }
+})
