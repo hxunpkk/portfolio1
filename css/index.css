@@ -77,7 +77,7 @@
 .article2 ul li {
     float: left;
     width: 30%;
-    margin-right: 40px;
+    margin-right: 5%;
 }
 
 .article2 ul li:last-child {
@@ -327,7 +327,7 @@
     float: left;
     width: 24%;
     margin-right: 10px; 
-    height: 45vh;
+    height: 20vw;
     position: relative;
 }
 
@@ -348,7 +348,6 @@
     font-size: 18px;
     font-weight: 300;
     color: #939393;
-    padding-top: 10px;
 }
 
 .article5 .first_ul li .aboutbox p{
