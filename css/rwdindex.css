@@ -19,6 +19,7 @@
     .article6 .mainbox > li{
         margin: 0 15px;
     }
+    
 
 }
 
@@ -29,10 +30,13 @@
     }
 
     .article5 .first_ul li:last-child {
-        height: 30vw;
+        height: 25vw;
     }
     .article5 .first_ul li .aboutbox {
         padding: 50px 40px;
+    }
+    .article6 .mainbox {
+        height: 50vh;
     }
 
 }
@@ -90,10 +94,16 @@
     .article5 {
         margin-left: 0;
     }
+    .article5 .first_ul li:last-child {
+        height: 35vw;
+    }
 
 
     .article6 {
         margin-left: 0;
+    }
+    .article6 .mainbox {
+        height: 40vh;
     }
     .article6 .list > li {
         padding-bottom: 30px;
@@ -177,7 +187,7 @@
     }
     .article6 .mainbox {
         overflow: hidden;
-        height: 100vh;
+        height: 110vw;
     }
 
     .article6 .mainbox > li{
@@ -200,4 +210,9 @@
         padding-right: 5px;
     }
 
+}
+@media screen and (max-width: 680px){
+    .article6 .mainbox {
+        height: 245vw;
+    }
 }

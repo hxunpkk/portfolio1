@@ -319,10 +319,13 @@
     font-size: 50px;
     text-align: center;
     z-index: 99999999;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.introAni.on {
+    display: flex;
 }
 .introAni > div {
     padding-bottom: 20px;
